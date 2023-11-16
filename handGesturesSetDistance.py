@@ -1,7 +1,6 @@
 import cv2
 import mediapipe as mp
 from djitellopy import Tello
-import time
 
 
 # Initialize Mediapipe hands module
@@ -44,7 +43,6 @@ direction_mapping = {
 
 while True:
 
-    time.sleep(10000)
     
     # Read frame from PC camera
     ret_pc_camera, pc_camera_frame = pc_camera_cap.read()
